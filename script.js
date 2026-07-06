@@ -31,18 +31,42 @@
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      const btn = contactForm.querySelector('.form-submit');
-      const originalText = btn.textContent;
+      // Custom validation
+      var isValid = true;
+      contactForm.querySelectorAll('[required]').forEach(function (field) {
+        field.classList.remove('field-error');
+        if (!field.value.trim()) {
+          field.classList.add('field-error');
+          isValid = false;
+        }
+      });
 
+      // Basic email format check
+      var emailField = contactForm.querySelector('input[type="email"]');
+      if (emailField && emailField.value.trim()) {
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailField.value.trim())) {
+          emailField.classList.add('field-error');
+          isValid = false;
+        }
+      }
+
+      if (!isValid) {
+        var firstError = contactForm.querySelector('.field-error');
+        if (firstError) { firstError.focus(); }
+        return;
+      }
+
+      var btn = contactForm.querySelector('.form-submit');
       btn.textContent = 'Sending…';
       btn.disabled = true;
 
       // Simulate form submission (replace with real endpoint as needed)
       setTimeout(function () {
         contactForm.innerHTML =
-          '<div style="text-align:center;padding:2rem;">' +
-          '<div style="font-size:3rem;margin-bottom:1rem;">✅</div>' +
-          '<h3 style="color:var(--color-primary-dark);margin-bottom:0.5rem;">Message Received!</h3>' +
+          '<div class="form-success">' +
+          '<div class="form-success-icon">✅</div>' +
+          '<h3 class="form-success-heading">Message Received!</h3>' +
           '<p>Thank you for reaching out. We\'ll get back to you within 1–2 business days.</p>' +
           '</div>';
       }, 1000);
@@ -52,7 +76,13 @@
   /* --- Smooth scroll for hash links not handled by CSS --- */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
+      var hash = this.getAttribute('href');
+      var target;
+      try {
+        target = document.querySelector(hash);
+      } catch (_) {
+        return;
+      }
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });

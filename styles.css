@@ -679,6 +679,13 @@ p {
   box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.18);
 }
 
+.form-group input.field-error,
+.form-group select.field-error,
+.form-group textarea.field-error {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.15);
+}
+
 .form-group textarea {
   resize: vertical;
   min-height: 110px;
@@ -695,6 +702,65 @@ p {
   justify-content: center;
   font-size: 1rem;
   padding: 0.85em 2em;
+}
+
+/* Form success state */
+.form-success {
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-success-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form-success-heading {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+/* Form section heading */
+.form-section-heading {
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+/* btn-outline-white: outlined button for use on dark/coloured backgrounds */
+.btn-outline-white {
+  background: transparent;
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+}
+
+/* badge-dark: badge variant for dark section backgrounds */
+.badge-dark {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-accent);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* nav-mobile-cta: primary CTA inside mobile nav */
+.nav-mobile-cta {
+  margin-top: 0.75rem;
+  display: inline-flex;
+}
+
+/* Fade-in animation (applied by IntersectionObserver in script.js) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ============================================

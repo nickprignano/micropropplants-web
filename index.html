@@ -19,17 +19,6 @@
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Fade-in animation style -->
-  <style>
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
 </head>
 <body>
 
@@ -72,7 +61,7 @@
           <a href="#products">Plants</a>
           <a href="#how-it-works">Process</a>
           <a href="#contact">Contact</a>
-          <a href="#contact" class="btn btn-primary" style="margin-top:0.75rem;display:inline-flex;">Browse Plants</a>
+          <a href="#products" class="btn btn-primary nav-mobile-cta">Browse Plants</a>
         </nav>
       </div>
     </nav>
@@ -96,7 +85,7 @@
             </p>
             <div class="hero-actions">
               <a href="#products" class="btn btn-white">Browse Plants</a>
-              <a href="#how-it-works" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.5);">How It Works</a>
+              <a href="#how-it-works" class="btn btn-outline-white">How It Works</a>
             </div>
           </div>
 
@@ -294,7 +283,7 @@
     <section class="section why-us" aria-labelledby="why-heading">
       <div class="container">
         <div class="section-header">
-          <span class="badge" style="background:rgba(255,255,255,0.12);color:var(--color-accent);">Why Us</span>
+          <span class="badge badge-dark">Why Us</span>
           <h2 id="why-heading">The MicroPropPlants Difference</h2>
           <p>We hold ourselves to a higher standard at every step of the process.</p>
         </div>
@@ -388,7 +377,7 @@
           </div>
 
           <div class="contact-form" role="form" aria-labelledby="form-heading">
-            <h3 id="form-heading" style="color:var(--color-primary-dark);margin-bottom:1.5rem;">Send a Message</h3>
+            <h3 id="form-heading" class="form-section-heading">Send a Message</h3>
             <form id="contact-form" novalidate>
               <div class="form-row">
                 <div class="form-group">
