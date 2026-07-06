@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicroPropPlants – Tissue Culture &amp; Micropropagation Plants</title>
+  <meta name="description" content="Premium tissue culture and micropropagation plants. Disease-free, true-to-type plantlets grown with cutting-edge laboratory techniques. Order online with fast shipping." />
+  <meta name="keywords" content="micropropagation, tissue culture plants, TC plants, disease-free plants, in vitro plants, meristem culture, plant nursery" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MicroPropPlants – Tissue Culture &amp; Micropropagation Plants" />
+  <meta property="og:description" content="Premium tissue culture and micropropagation plants. Disease-free, true-to-type plantlets grown with cutting-edge laboratory techniques." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://micropropplants.com/" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fade-in animation style -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="#" class="nav-logo" aria-label="MicroPropPlants home">
+            <span class="nav-logo-icon" aria-hidden="true">🌿</span>
+            MicroPropPlants
+          </a>
+
+          <ul class="nav-links" role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Plants</a></li>
+            <li><a href="#how-it-works">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-cta">
+            <a href="#products" class="btn btn-primary">Browse Plants</a>
+          </div>
+
+          <button
+            class="nav-hamburger"
+            id="hamburger"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile navigation">
+          <a href="#about">About</a>
+          <a href="#products">Plants</a>
+          <a href="#how-it-works">Process</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="btn btn-primary" style="margin-top:0.75rem;display:inline-flex;">Browse Plants</a>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="badge">🔬 Lab-Grown &amp; Disease-Free</span>
+            <h1 id="hero-heading">
+              Premium <span>Tissue Culture</span><br />Plants, Delivered
+            </h1>
+            <p>
+              We use advanced micropropagation techniques to produce healthy,
+              true-to-type, pathogen-free plantlets. From rare tropicals to
+              high-demand cultivars — grown clean, shipped fast.
+            </p>
+            <div class="hero-actions">
+              <a href="#products" class="btn btn-white">Browse Plants</a>
+              <a href="#how-it-works" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.5);">How It Works</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-plant-graphic">🌱</div>
+          </div>
+        </div>
+
+        <div class="hero-stats" role="list">
+          <div role="listitem">
+            <div class="hero-stat-value">100%</div>
+            <div class="hero-stat-label">Disease-Free Certified</div>
+          </div>
+          <div role="listitem">
+            <div class="hero-stat-value">50+</div>
+            <div class="hero-stat-label">Species Available</div>
+          </div>
+          <div role="listitem">
+            <div class="hero-stat-value">Lab</div>
+            <div class="hero-stat-label">Grown &amp; Verified</div>
+          </div>
+          <div role="listitem">
+            <div class="hero-stat-value">Fast</div>
+            <div class="hero-stat-label">Nationwide Shipping</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-icon-grid" aria-hidden="true">
+            <div class="about-icon-card">
+              <div class="icon">🧪</div>
+              <h4>Sterile Lab</h4>
+            </div>
+            <div class="about-icon-card">
+              <div class="icon">🌿</div>
+              <h4>True-to-Type</h4>
+            </div>
+            <div class="about-icon-card">
+              <div class="icon">🔬</div>
+              <h4>Pathogen-Free</h4>
+            </div>
+            <div class="about-icon-card">
+              <div class="icon">📦</div>
+              <h4>Safe Shipping</h4>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <span class="badge">About Us</span>
+            <h2 id="about-heading">Science Meets Horticulture</h2>
+            <p>
+              At MicroPropPlants, we combine horticultural expertise with modern
+              laboratory science to produce exceptional tissue-culture plants.
+              Every plantlet is initiated from carefully selected, disease-indexed
+              stock material and multiplied under strict sterile conditions.
+            </p>
+            <p>
+              Whether you're a home enthusiast looking for rare tropicals, a
+              commercial grower seeking virus-free stock, or a researcher needing
+              certified plant material, we have the expertise and facilities to meet
+              your needs.
+            </p>
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="section products" id="products" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Our Plants</span>
+          <h2 id="products-heading">Popular Tissue Culture Varieties</h2>
+          <p>All plants are produced via micropropagation — genetically identical to
+            the parent plant, free of viruses, bacteria, and fungal pathogens.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-card-icon" aria-hidden="true">🌴</div>
+            <h3>Rare Tropicals</h3>
+            <p>
+              Aroids, Philodendrons, Monsteras, Anthuriums and more — hard-to-find
+              cultivars produced in quantity via TC for consistent quality.
+            </p>
+            <span class="tag">Aroids &amp; Araceae</span>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-icon" aria-hidden="true">🫐</div>
+            <h3>Fruit Crops</h3>
+            <p>
+              Strawberry, blueberry, raspberry, and other soft-fruit cultivars.
+              Virus-free certified stock for commercial growers and home gardens.
+            </p>
+            <span class="tag">Berry &amp; Soft Fruit</span>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-icon" aria-hidden="true">🌸</div>
+            <h3>Ornamental Perennials</h3>
+            <p>
+              Hostas, Daylilies, Sedums, and ornamental grasses propagated true-to-type.
+              Perfect for landscapers and retail nurseries.
+            </p>
+            <span class="tag">Garden &amp; Landscape</span>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-icon" aria-hidden="true">🌵</div>
+            <h3>Succulents &amp; Cacti</h3>
+            <p>
+              Rare and collector-grade succulents produced in sterile culture —
+              cleaner and more uniform than conventional propagation.
+            </p>
+            <span class="tag">Drought Tolerant</span>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-icon" aria-hidden="true">🍓</div>
+            <h3>Virus-Free Stock</h3>
+            <p>
+              Certified virus-free propagation material for strawberries, sweet potatoes,
+              and other vegetatively propagated crops.
+            </p>
+            <span class="tag">Commercial Grade</span>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-icon" aria-hidden="true">🪴</div>
+            <h3>Custom Orders</h3>
+            <p>
+              Need a specific variety or cultivar in large quantities? We accept custom
+              micropropagation contracts for commercial and research clients.
+            </p>
+            <span class="tag">Wholesale &amp; Research</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section how-it-works" id="how-it-works" aria-labelledby="hiw-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Our Process</span>
+          <h2 id="hiw-heading">From Lab to Your Door</h2>
+          <p>Every plant goes through a rigorous, multi-stage laboratory process before
+            it's packaged and shipped to you.</p>
+        </div>
+
+        <div class="steps-grid" role="list">
+
+          <div class="step-card" role="listitem">
+            <div class="step-number" aria-label="Step 1">1</div>
+            <h3>Stock Selection</h3>
+            <p>We start with thoroughly indexed, disease-free mother plants of verified
+              genetic identity.</p>
+          </div>
+
+          <div class="step-card" role="listitem">
+            <div class="step-number" aria-label="Step 2">2</div>
+            <h3>In Vitro Initiation</h3>
+            <p>Explants are surface-sterilised and established on nutrient agar media
+              inside a sterile laminar flow hood.</p>
+          </div>
+
+          <div class="step-card" role="listitem">
+            <div class="step-number" aria-label="Step 3">3</div>
+            <h3>Multiplication</h3>
+            <p>Shoot clumps are divided and sub-cultured through multiple cycles to
+              build up the number of plantlets.</p>
+          </div>
+
+          <div class="step-card" role="listitem">
+            <div class="step-number" aria-label="Step 4">4</div>
+            <h3>Rooting &amp; Dispatch</h3>
+            <p>Rooted plantlets are hardened off, quality-checked, and carefully
+              packaged for safe nationwide delivery.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section why-us" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge" style="background:rgba(255,255,255,0.12);color:var(--color-accent);">Why Us</span>
+          <h2 id="why-heading">The MicroPropPlants Difference</h2>
+          <p>We hold ourselves to a higher standard at every step of the process.</p>
+        </div>
+
+        <div class="features-grid" role="list">
+
+          <div class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">✅</div>
+            <h3>Certified Disease-Free</h3>
+            <p>All stock material is indexed and tested for known pathogens before
+              entering our tissue culture workflow.</p>
+          </div>
+
+          <div class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">🧬</div>
+            <h3>Genetically True</h3>
+            <p>Micropropagation preserves the exact genetic make-up of the mother
+              plant — no variation, no surprises.</p>
+          </div>
+
+          <div class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">📈</div>
+            <h3>Scalable Supply</h3>
+            <p>Our lab-based production means we can scale rapidly to meet demand,
+              with consistent quality across every batch.</p>
+          </div>
+
+          <div class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">🌍</div>
+            <h3>Sustainable Production</h3>
+            <p>Tissue culture uses dramatically less space, water, and agrochemicals
+              compared to conventional propagation methods.</p>
+          </div>
+
+          <div class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">📦</div>
+            <h3>Expert Packaging</h3>
+            <p>Plants are shipped in sealed vessels or carefully wrapped with moisture-
+              retention media to survive transit.</p>
+          </div>
+
+          <div class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">💬</div>
+            <h3>Grower Support</h3>
+            <p>We provide detailed acclimation and growing guides with every order,
+              plus email support from our horticulture team.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <span class="badge">Contact</span>
+            <h2 id="contact-heading">Get in Touch</h2>
+            <p>
+              Have a question about our plants, want to place a wholesale order, or
+              interested in a custom propagation project? We'd love to hear from you.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">📧</span>
+                <div class="contact-detail-text">
+                  <strong>Email</strong>
+                  <span><a href="mailto:hello@micropropplants.com">hello@micropropplants.com</a></span>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">🕐</span>
+                <div class="contact-detail-text">
+                  <strong>Response Time</strong>
+                  <span>Within 1–2 business days</span>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">🚚</span>
+                <div class="contact-detail-text">
+                  <strong>Shipping</strong>
+                  <span>Nationwide shipping available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form" role="form" aria-labelledby="form-heading">
+            <h3 id="form-heading" style="color:var(--color-primary-dark);margin-bottom:1.5rem;">Send a Message</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    required
+                    autocomplete="given-name"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    required
+                    autocomplete="family-name"
+                    placeholder="Smith"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="jane@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="enquiry-type">Enquiry Type</label>
+                <select id="enquiry-type" name="enquiry_type">
+                  <option value="">Select a topic…</option>
+                  <option value="order">Place an Order</option>
+                  <option value="wholesale">Wholesale / Bulk Pricing</option>
+                  <option value="custom">Custom Propagation Project</option>
+                  <option value="research">Research Collaboration</option>
+                  <option value="other">General Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Tell us about the plants you're looking for, quantities needed, or any other questions…"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message →
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="MicroPropPlants home">
+            <span class="nav-logo-icon" aria-hidden="true">🌿</span>
+            MicroPropPlants
+          </a>
+          <p>Premium tissue culture plants produced in state-of-the-art laboratories.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plants</h4>
+          <ul role="list">
+            <li><a href="#products">Rare Tropicals</a></li>
+            <li><a href="#products">Fruit Crops</a></li>
+            <li><a href="#products">Ornamentals</a></li>
+            <li><a href="#products">Succulents</a></li>
+            <li><a href="#products">Virus-Free Stock</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#how-it-works">Our Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul role="list">
+            <li><a href="#how-it-works">Acclimation Guide</a></li>
+            <li><a href="#contact">Wholesale Enquiries</a></li>
+            <li><a href="#contact">Custom Projects</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year">2024</span> MicroPropPlants. All rights reserved.</span>
+        <span>
+          <a href="#contact">Privacy Policy</a> &middot;
+          <a href="#contact">Terms of Service</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Update footer year dynamically
+    var el = document.getElementById('footer-year');
+    if (el) { el.textContent = new Date().getFullYear(); }
+  </script>
+
+</body>
+</html>
