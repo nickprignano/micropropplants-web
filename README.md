@@ -1,6 +1,6 @@
 # MicroPropPlants — Website (v1)
 
-A small, fast, static site for **micropropplants.com**. No build step, no framework, no backend — just HTML and CSS. v1 is a brochure + care guide; there is intentionally **no ordering** (sales happen on TikTok with local porch pickup).
+A small, fast, static site for **micropropplants.com**. No build step, no framework, no backend — just HTML and CSS. v1 is a brochure + care guide; there is intentionally **no ordering** (sales happen on TikTok with local porch pickup). Ope.
 
 ## What's here
 
