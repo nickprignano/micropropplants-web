@@ -1,4 +1,4 @@
 # Cloudflare Pages _redirects file
 # https://developers.cloudflare.com/pages/configuration/redirects/
 # Redirect www to apex domain (permanent)
-/* https://micropropplants.com/:splat 301
+
